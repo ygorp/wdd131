@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: #1a2533;
+  --color-secundario: #30a8f0;
+  --color-acento: #92abb9;
+  --color-fondo: #f5f5f5;
+  --fuente-principal: 'Arial', sans-serif;
+  --fuente-secundaria: 'Helvetica', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-primario);
+  color: var(--color-fondo);
+  font-family: var(--fuente-principal);
+  font-size: 1.2rem;
+  height: 150px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-secundario);
+  padding: 20px 0;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--color-fondo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: var(--fuente-secundaria);
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: 550px;
+}
+
+.contain-main {
+  background-color: var(--color-acento);
+  padding: 20px;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+}
+
+.contain-aside {
+  background-color: var(--color-fondo);
+  padding: 20px;
+  font-family: var(--fuente-secundaria);
+  font-size: 1rem;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: var(--color-fondo);
+  text-align: center;
+  padding: 8px 20px 10px 20px;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  height: 250px;
+}
